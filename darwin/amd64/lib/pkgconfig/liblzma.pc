@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/weitz/Documents/work/spatial/darwin/amd64
+exec_prefix=/Users/weitz/Documents/work/spatial/darwin/amd64
+libdir=/Users/weitz/Documents/work/spatial/darwin/amd64/lib
+includedir=/Users/weitz/Documents/work/spatial/darwin/amd64/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: http://tukaani.org/xz/
+Version: 5.2.2
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -D_THREAD_SAFE -pthread 
